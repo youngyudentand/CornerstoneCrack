@@ -3,6 +3,5 @@
 # LICENSE
 本文主要用于学习，禁止用于任何商业用途。
 
-![](./IMG_1300.JPG)
-
+<img src="./IMG_1300.JPG" width="300px" height="300px">
 
