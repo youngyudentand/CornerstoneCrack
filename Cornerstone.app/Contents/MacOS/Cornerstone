@@ -1,0 +1,3 @@
+#!/bin/sh
+CurrentAppPath=$(cd $(dirname $0) && pwd)
+DYLD_INSERT_LIBRARIES=${CurrentAppPath}/libCornerstoneCrack.dylib /Applications/Cornerstone4.app/Contents/MacOS/Cornerstone
