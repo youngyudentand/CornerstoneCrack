@@ -19,6 +19,8 @@
     
     class = objc_getClass("ZTrialPeriodLicensingPolicy");
     [class jr_swizzleMethod:@selector(showWindow) withMethod:@selector(xy_showWindow) error:nil];
+    [class jr_swizzleMethod:@selector(showExpiryWindow) withMethod:@selector(xy_showExpiryWindow) error:nil];
+
 }
 
 - (BOOL)xy_hasExpired
@@ -28,10 +30,15 @@
 
 - (unsigned long long)xy_remaining
 {
-    return 1;
+    return 3650;
 }
 
 - (BOOL)xy_showWindow
+{
+    return YES;
+}
+
+- (BOOL)xy_showExpiryWindow
 {
     return YES;
 }
